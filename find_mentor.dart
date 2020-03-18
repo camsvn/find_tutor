@@ -245,11 +245,22 @@ void main(){
         continue;
       }
       else if(number==2){
-        showParticipantList();
-        continue;
+        if(mentorlist.length>0 || learnerlist.length>0){
+          showParticipantList();
+          continue;
+        }
+        else{
+          print('No Participants Available');
+          continue;
+        }
       }
       else if(number==3){
-        break;
+        if(mentorlist.length>0 || learnerlist.length>0)
+          break;
+        else{
+          print('No Participants Available');
+          continue;
+        }
       }
       else{
         print('Enter a Valid Choice:');
