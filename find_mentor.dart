@@ -255,10 +255,10 @@ void main(){
         }
       }
       else if(number==3){
-        if(mentorlist.length>0 || learnerlist.length>0)
+        if(mentorlist.length>0 && learnerlist.length>0)
           break;
         else{
-          print('No Participants Available');
+          print('No Mentor/Learner is Available');
           continue;
         }
       }
